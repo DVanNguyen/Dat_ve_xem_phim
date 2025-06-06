@@ -230,7 +230,7 @@ class MovieSchedule {
         const bookButton = bannerText.querySelector(".btn-primary");
         if (bookButton) {
             bookButton.onclick = () => {
-                window.location.href = `/doancso1.1/datve.html?movie=${encodeURIComponent(movie.title)}&poster=${encodeURIComponent(bannerImageUrl)}&genre=${encodeURIComponent(movieDetails.genre)}&duration=${encodeURIComponent(movieDetails.duration)}&director=${encodeURIComponent(movieDetails.director)}&actors=${encodeURIComponent(movieDetails.actors)}&overview=${encodeURIComponent(movieDetails.overview)}`;
+                window.location.href = `/Dat_ve_xem_phim/datve.html?movie=${encodeURIComponent(movie.title)}&poster=${encodeURIComponent(bannerImageUrl)}&genre=${encodeURIComponent(movieDetails.genre)}&duration=${encodeURIComponent(movieDetails.duration)}&director=${encodeURIComponent(movieDetails.director)}&actors=${encodeURIComponent(movieDetails.actors)}&overview=${encodeURIComponent(movieDetails.overview)}`;
             };
         }
 
