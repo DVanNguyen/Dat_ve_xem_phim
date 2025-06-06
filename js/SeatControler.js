@@ -1,4 +1,4 @@
-class SeatController {
+ SeatController {
     constructor() {
         // Lấy thông tin từ URL
         const urlParams = new URLSearchParams(window.location.search);
@@ -168,7 +168,7 @@ class SeatController {
             }
             const seatsQuery = encodeURIComponent(this.selectedSeats.join(','));
             const combosQuery = encodeURIComponent(JSON.stringify(this.selectedCombos.filter(c => c)));
-            window.location.href = `/doancso1.1/pay.html?movie=${encodeURIComponent(this.movieTitle)}&cinema=${encodeURIComponent(this.cinema)}&showtime=${encodeURIComponent(this.showtime)}&address=${encodeURIComponent(this.address)}&seats=${seatsQuery}&combos=${combosQuery}&total=${this.totalPrice} &poster=${encodeURIComponent(this.poster)}`;
+            window.location.href = `/Dat_ve_xem_phim/pay.html?movie=${encodeURIComponent(this.movieTitle)}&cinema=${encodeURIComponent(this.cinema)}&showtime=${encodeURIComponent(this.showtime)}&address=${encodeURIComponent(this.address)}&seats=${seatsQuery}&combos=${combosQuery}&total=${this.totalPrice} &poster=${encodeURIComponent(this.poster)}`;
         });
     }
 
