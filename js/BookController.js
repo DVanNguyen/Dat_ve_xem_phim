@@ -43,7 +43,7 @@ class BookController {
                 bookButton.textContent = 'Đặt vé';
                 const address = row.querySelector('td:nth-child(2)').textContent; // Lấy địa chỉ từ cột thứ 2
                 bookButton.onclick = () => {
-                    window.location.href = `/doancso1.1/seat.html?movie=${encodeURIComponent(this.movieTitle)}&cinema=${encodeURIComponent(cinema)}&showtime=${encodeURIComponent(selectedShowtime)}&address=${encodeURIComponent(address)}&poster=${encodeURIComponent(this.poster)}`;
+                    window.location.href = `/Dat_ve_xem_phim/seat.html?movie=${encodeURIComponent(this.movieTitle)}&cinema=${encodeURIComponent(cinema)}&showtime=${encodeURIComponent(selectedShowtime)}&address=${encodeURIComponent(address)}&poster=${encodeURIComponent(this.poster)}`;
                 };
                 actionMessage.appendChild(bookButton);
             } else {
