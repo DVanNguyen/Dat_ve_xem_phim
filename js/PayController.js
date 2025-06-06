@@ -90,7 +90,7 @@ class PaymentController {
                 const combosQuery = encodeURIComponent(JSON.stringify(this.combos));
 
                 // Chuyển hướng đến finish.html với các tham số cần thiết
-                window.location.href = `/doancso1.1/finish.html?movie=${encodeURIComponent(this.movieTitle)}&cinema=${encodeURIComponent(this.cinema)}&showtime=${encodeURIComponent(this.showtime)}&address=${encodeURIComponent(this.address)}&seats=${seatsQuery}&combos=${combosQuery}&total=${this.totalPrice}&poster=${encodeURIComponent(this.poster)}`;            } else {
+                window.location.href = `/Dat_ve_xem_phim/finish.html?movie=${encodeURIComponent(this.movieTitle)}&cinema=${encodeURIComponent(this.cinema)}&showtime=${encodeURIComponent(this.showtime)}&address=${encodeURIComponent(this.address)}&seats=${seatsQuery}&combos=${combosQuery}&total=${this.totalPrice}&poster=${encodeURIComponent(this.poster)}`;            } else {
                 alert('Vui lòng điền đầy đủ thông tin thanh toán!');
             }
         });
