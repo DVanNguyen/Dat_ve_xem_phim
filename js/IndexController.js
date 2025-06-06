@@ -145,7 +145,7 @@ class MovieSchedule {
 
         // Lấy thông tin chi tiết của phim
         const movieDetails = await this.getMovieDetails(movie.id);
-        const movieUrl = `/doancso1.1/datve.html?movie=${encodeURIComponent(movie.title)}&poster=${encodeURIComponent(posterUrl)}&genre=${encodeURIComponent(movieDetails.genre)}&duration=${encodeURIComponent(movieDetails.duration)}&director=${encodeURIComponent(movieDetails.director)}&actors=${encodeURIComponent(movieDetails.actors)}&overview=${encodeURIComponent(movieDetails.overview)}`;
+        const movieUrl = `/Dat_ve_xem_phim/datve.html?movie=${encodeURIComponent(movie.title)}&poster=${encodeURIComponent(posterUrl)}&genre=${encodeURIComponent(movieDetails.genre)}&duration=${encodeURIComponent(movieDetails.duration)}&director=${encodeURIComponent(movieDetails.director)}&actors=${encodeURIComponent(movieDetails.actors)}&overview=${encodeURIComponent(movieDetails.overview)}`;
 
         movieCard.innerHTML = `
             <div class="movie-card-inner">
