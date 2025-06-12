@@ -101,7 +101,7 @@ class ConfirmationController {
         const continueButton = document.querySelector('.action-buttons .btn-secondary');
         if (continueButton) {
             continueButton.addEventListener('click', () => {
-                window.location.href = '/Dat_ve_xem_phim/index.html';
+                window.location.href = '/doancso1.1/index.html';
             });
         } else {
             console.error('Button .btn-secondary not found');
