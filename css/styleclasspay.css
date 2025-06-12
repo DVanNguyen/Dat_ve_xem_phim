@@ -746,10 +746,10 @@ body {
 }
 
 /* Nhóm 4: Màn hình lớn (> 1200px) */
-@media (min-width: 1201px) {
+@media (min-width: 1201px) and (max-width: 1919px) {
     /* Navbar */
     .navbar-brand {
-        font-size: 28px;
+        font-size: 26px;
     }
 
     .search-bar {
@@ -767,35 +767,35 @@ body {
     }
 
     .sidebar ul li a {
-        font-size: 20px;
-        padding: 16px 22px;
+        font-size: 16px;
+        padding: 10px 22px;
     }
 
     /* Main Content */
     .main-content {
         margin-left: 240px;
-        padding: 30px;
+        padding: 25px;
     }
 
     /* Payment Section */
     .payment-options .nav-link {
         padding: 12px 22px;
-        font-size: 20px;
+        font-size: 14px;
     }
 
     .payment-form input,
     .payment-form select {
         padding: 16px;
-        font-size: 20px;
+        font-size: 14px;
     }
 
     .payment-form label {
-        font-size: 18px;
+        font-size: 14px;
     }
 
     .payment-options .btn {
         padding: 16px 35px;
-        font-size: 20px;
+        font-size: 14px;
     }
 
     .summary-section h3 {
@@ -803,7 +803,7 @@ body {
     }
 
     .summary-section p {
-        font-size: 20px;
+        font-size: 16px;
     }
 
     /* Footer */
@@ -813,5 +813,63 @@ body {
         width: auto;
         margin-right: 30px;
         margin-left: 270px;
+    }
+}
+
+@media (min-width: 1920px) {
+    /* Navbar */
+    .navbar-brand {
+        font-size: 28px;
+    }
+
+    .search-bar {
+        width: 30%;
+    }
+
+    /* Sidebar */
+    .sidebar {
+        width: 260px;
+    }
+
+    /* Main Content */
+    .main-content {
+        margin-left: 280px;
+        padding: 40px;
+    }
+
+    .payment-options .nav-link {
+        padding: 8px 18px;
+        font-size: 16px;
+    }
+
+    .payment-form input,
+    .payment-form select {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .payment-form label {
+        font-size: 14px;
+    }
+
+    .payment-options .btn {
+        padding: 12px 25px;
+        font-size: 14px;
+    }
+
+    .summary-section h3 {
+        font-size: 14px;
+    }
+
+    .summary-section p {
+        font-size: 14px;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 40px 0;
+        width: auto;
+        max-width: 1700px; 
+        margin-left: 290px;
     }
 }
