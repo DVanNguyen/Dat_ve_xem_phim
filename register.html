@@ -95,61 +95,61 @@
     <!-- Bootstrap JS and Popper.js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-document.getElementById("registerBtn").addEventListener("click", function () {
-    const name = document.getElementById("regName").value.trim();
-    const email = document.getElementById("regEmail").value.trim();
-    const password = document.getElementById("regPassword").value;
-    const confirmPassword = document.getElementById("regConfirmPassword").value;
-
-    // Kiểm tra Họ và tên không chứa số hoặc ký tự đặc biệt
-    const nameRegex = /^[a-zA-ZÀ-ỹ\s]+$/u;
-    if (!nameRegex.test(name)) {
-        alert("Họ và tên không được chứa số hoặc ký tự đặc biệt.");
-        return;
-    }
-
-    if (!email.endsWith("@gmail.com")) {
-        alert("Email phải kết thúc bằng @gmail.com");
-        return;
-    }
-
-    if (password.length < 6) {
-        alert("Mật khẩu phải có ít nhất 6 ký tự.");
-        return;
-    }
-
-    if (!/\d/.test(password)) {
-        alert("Mật khẩu phải chứa ít nhất 1 chữ số.");
-        return;
-    }
-
-    if (password !== confirmPassword) {
-        alert("Mật khẩu xác nhận không khớp.");
-        return;
-    }
-
-    let users = JSON.parse(localStorage.getItem("users")) || [];
-
-    const isExist = users.some(user => user.email === email);
-    if (isExist) {
-        alert("Email đã được đăng ký.");
-        return;
-    }
-
-    const newUser = {
-        name: name,
-        email: email,
-        password: password,
+        document.getElementById("registerBtn").addEventListener("click", function () {
+        const name = document.getElementById("regName").value.trim();
+        const email = document.getElementById("regEmail").value.trim();
+        const password = document.getElementById("regPassword").value;
+        const confirmPassword = document.getElementById("regConfirmPassword").value;
+    
+        // Kiểm tra Họ và tên không chứa số hoặc ký tự đặc biệt
+        const nameRegex = /^[a-zA-ZÀ-ỹ\s]+$/u;
+        if (!nameRegex.test(name)) {
+            alert("Họ và tên không được chứa số hoặc ký tự đặc biệt.");
+            return;
+        }
+    
+        if (!email.endsWith("@gmail.com")) {
+            alert("Email phải kết thúc bằng @gmail.com");
+            return;
+        }
+    
+        if (password.length < 6) {
+            alert("Mật khẩu phải có ít nhất 6 ký tự.");
+            return;
+        }
+    
+        if (!/\d/.test(password)) {
+            alert("Mật khẩu phải chứa ít nhất 1 chữ số.");
+            return;
+        }
+    
+        if (password !== confirmPassword) {
+            alert("Mật khẩu xác nhận không khớp.");
+            return;
+        }
+    
+        let users = JSON.parse(localStorage.getItem("users")) || [];
+    
+        const isExist = users.some(user => user.email === email);
+        if (isExist) {
+            alert("Email đã được đăng ký.");
+            return;
+        }
+    
+        const newUser = {
+            name: name,
+            email: email,
+            password: password,
         role: "user"
-    };
-
-    users.push(newUser);
-    localStorage.setItem("users", JSON.stringify(users));
-
-    alert("Đăng ký thành công! Bạn có thể đăng nhập.");
-    window.location.href = "/doancso1.1/index.html";
-});
-</script>
+        };
+    
+        users.push(newUser);
+        localStorage.setItem("users", JSON.stringify(users));
+    
+        alert("Đăng ký thành công! Bạn có thể đăng nhập.");
+        window.location.href = "/doancso1.1/index.html";
+        });
+    </script>
 
 </script>
 
