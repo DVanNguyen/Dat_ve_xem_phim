@@ -17,7 +17,7 @@
     <!-- Thanh điều hướng trên cùng -->
     <nav class="navbar">
         <div class="container-fluid">
-            <a class="navbar-brand" href="/doancso1.1/index.html">MOVIEBOOK</a>
+            <a class="navbar-brand" href="/doancso1.1/login.html">MOVIEBOOK</a>
         </div>
     </nav>
 
@@ -106,14 +106,14 @@
 
         if (email === "Nguyen@gmail.com" && password === "Nguyen@123") {
                 // 👉 Chuyển hướng đúng đường dẫn mong muốn:
-                window.location.href = "/doancso1.1/home.html";
+                window.location.href = "/doancso1.1/index.html";
         }else if (email === user.email && password === user.password) {
             if (document.getElementById("rememberMe").checked) {
                 localStorage.setItem("rememberedUser", JSON.stringify(user));
             }
 
             // 👉 Chuyển hướng đúng đường dẫn mong muốn:
-            window.location.href = "/doancso1.1/home.html";
+            window.location.href = "/doancso1.1/index.html";
         } else {
             alert("Email hoặc mật khẩu không đúng.");
         }
